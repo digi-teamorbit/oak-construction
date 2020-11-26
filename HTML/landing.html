@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>::: Oak Construction Ltd. :::</title>
+    <!-- All CSS inclueded in one  -->
+    <link href="css/allmix.css" rel="stylesheet" type="text/css">
+    <link href="css/slicknav.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="responsive landing">
+
+
+    <div class="landingSec flexRow">
+      <div class="container">
+        <div class="col-md-8 col-sm-12 col-xs-12 text-center flexCol centerCol">
+          <div class="landingBox">
+            <img src="images/logo.png" alt="img">
+            <h1>Welcome To Oak Construction (whitby) Ltd,</h1>
+            <h2>Our New Website Is Under Construction</h2>
+            <a href="tel:01947 881266">Phone : 01947 881266</a><br>
+            <a href="mailto:rob@oakconstructionltd.com">Email : rob@oakconstructionltd.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Js Files Start -->
+    <script src="js/allmix.js"></script> 
+    <script src="js/jquery.slicknav.js"></script> 
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(function() {
+      var body = $('body');
+      var backgrounds = ['url(images/banner.jpg)', 'url(images/banner2.jpg)', 'url(images/banner3.jpg)', 'url(images/banner4.jpg)'];
+      var current = 0;
+
+      function nextBackground() {
+        body.css(
+         'background',
+          backgrounds[current = ++current % backgrounds.length]
+       );
+
+       setTimeout(nextBackground, 7000);
+       }
+       setTimeout(nextBackground, 7000);
+         body.css('background', backgrounds[0]);
+     });
+    </script>
+  </body>
+</html>
